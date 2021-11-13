@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Roboto:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+}
+h1,h2,h3,h5{
+	font-family: 'Mulish', sans-serif;
+}
+h6,p{
+	font-family: 'Roboto', sans-serif;
+}
+#hero-container{
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/bg.jpeg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+#hero-content h1{
+	font-size: 4rem;
+	color: white;
+	max-width: 70%;
+}
+#hero-content p{
+	color: white;
+	max-width: 60%;
+}
+#lets-talk{
+	color: white;
+	margin-top: 1rem;
+}
+.navbar{
+	position: absolute;
+	width: 100%;
+	background: rgba(0,0,0,0.3);
+}
+.nav-link{
+	color: white;
+}
+.service-title{
+	text-align: center;
+}
+.card{
+	min-height: 45vh;
+}
+.card-body h5{
+font-weight: 700;
+}
+#about-container{
+	height: 80vh;
+}
+.about-content{
+	width: 50%;
+	height: auto;
+}
+.about-content h1{
+	font-size: 4rem;
+}
+.about-content p{
+	max-width: 85%;
+}
+.about-image{
+	width: 50%;
+	height: auto;
+}
+.social-media a{
+	margin: 0 0.9rem 0 0;
+	color: black;
+	text-decoration: underline;
+}
+footer{
+	color: white;
+}
+@media screen and (max-width: 475px){
+	#hero-content h1{
+		font-size: 2.5rem;
+		color: white;
+		max-width: 100%;
+	}
+	#hero-content p{
+		font-size: 0.8rem;
+		color: white;
+		max-width: 100%;
+	}
+	#about-container{
+		flex-direction: column-reverse;
+		height: 90vh;
+		padding: 0 1rem;
+	}
+	.about-content{
+		width: 100%;
+		height: 80%;
+	}
+	.about-content p{
+		max-width: 100%;
+	}
+	.about-image{
+		width: 100%;
+		height: 50%;
+	}
+	.social-media a{
+		font-size: 0.8rem;
+		margin: 0 0.8rem 0 0;
+	}
+}
